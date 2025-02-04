@@ -9,4 +9,8 @@ class LoginController extends Controller
     public function index() {
         return view('auth.login');
     }
+
+    public function auth(Request $request) {
+        return redirect("/inventory");
+    }
 }
