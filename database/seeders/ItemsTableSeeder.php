@@ -22,3 +22,4 @@ class ItemsTableSeeder extends Seeder
     ]);
     }
 }
+
