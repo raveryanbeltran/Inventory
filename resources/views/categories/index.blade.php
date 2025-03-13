@@ -8,8 +8,6 @@
     <title>Document</title> 
 </head>
 <body>
-
-
     @include("template.navbar")
 
 <div class="container">
@@ -17,23 +15,21 @@
 <div class="row">
     <div class="card">
         <div class="card-body">
-        <a class="btn btn-success btn-sm" href="/create">Add Inventory</a>
+        <button class="btn btn-success btn-sm">Add Category</button>
         <table class="table table-hover">
         <thead>
             <tr>
-            <th scope="col">Category</th>
-            <th scope="col">Item Name</th>
-            <th scope="col">Price</th>
+            <th scope="col">Category Name</th>
+            <th scope="col">Description</th>
             <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
-        @foreach ($items as $item)
+        @foreach ($categories as $category)
             <tr>
 
-                <td>{{ $item->category_id }}</td>
-                <td>{{ $item->item_name }}</td>
-                <td>{{ $item->price }}</td>
+                <td>{{ $category->category_name }}</td>
+                <td>{{ $category->description }}</td>
                 <td><button class="btn btn-info btn-sm">Edit</button>
                 <button class="btn btn-danger btn-sm">Delete</button>
                 </td>
