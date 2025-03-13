@@ -25,3 +25,4 @@ class InventoryController extends Controller
    //     return view('inv.create');
    // }
 }
+
